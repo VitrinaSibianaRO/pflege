@@ -9,7 +9,7 @@ export default function About({ T, CFG }) {
     <section id="about" className="section">
       <div className="container about-grid">
         <Reveal className="about-media">
-          <MediaSlot src={CFG.media + "despre.jpg"} kind="image" label="media/despre.jpg — echipa / îngrijire la domiciliu" ratio="4 / 5" radius={24} />
+          <MediaSlot src={CFG.media + "germania.mp4"} kind="video" label="media/germania.mp4 — echipa / îngrijire la domiciliu" ratio="4 / 5" radius={24} />
         </Reveal>
         <div className="about-copy">
           <SectionHeader kicker={T.about.kicker} title={T.about.title} />
