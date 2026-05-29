@@ -23,7 +23,7 @@ export default function WhyUs({ T, CFG }) {
           </div>
         </div>
         <Reveal delay={150} className="why-media">
-          <MediaSlot src={CFG.media + "germania.jpg"} kind="image" label="media/germania.jpg — Germania / document de muncă" ratio="3 / 4" radius={24} />
+          <MediaSlot src={CFG.media + "germania.mp4"} kind="video" label="media/germania.mp4 — Germania / document de muncă" ratio="3 / 4" radius={24} />
         </Reveal>
       </div>
     </section>
