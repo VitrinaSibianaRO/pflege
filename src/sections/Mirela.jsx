@@ -11,7 +11,7 @@ export default function Mirela({ T, CFG }) {
         </Reveal>
         <div className="mirela-copy">
           <Reveal className="kicker"><span style={{ width: 22, height: 1.5, background: "var(--accent)", display: "inline-block" }}></span>{T.mirela.kicker}</Reveal>
-          <Reveal as="blockquote" delay={90} className="mirela-quote">\u201C{T.mirela.quote}\u201D</Reveal>
+          <Reveal as="blockquote" delay={90} className="mirela-quote">“{T.mirela.quote}”</Reveal>
           <Reveal delay={160} className="mirela-sign">
             <div>
               <div className="mirela-name">{T.mirela.name}</div>
