@@ -28,7 +28,7 @@ export default function Hero({ T, CFG, heroStyle }) {
     return (
       <section id="top" className="hero hero-fullbleed">
         <div className="hero-bg">
-          <MediaSlot src={CFG.media + "hero.jpg"} kind="image" label="media/hero.jpg — fotografie îngrijitoare & vârstnic" ratio="auto" radius={0}
+          <MediaSlot src={CFG.media + "hero.mp4"} kind="video" label="media/hero.mp4 — video îngrijitoare & vârstnic" ratio="auto" radius={0}
             style={{ position: "absolute", inset: 0, height: "100%" }} />
           <div className="hero-scrim"></div>
         </div>
@@ -55,7 +55,7 @@ export default function Hero({ T, CFG, heroStyle }) {
           {statRow}
         </div>
         <Reveal delay={180} className="hero-media">
-          <MediaSlot src={CFG.media + "hero.jpg"} kind="image" label="media/hero.jpg — îngrijitoare cu un vârstnic, lumină caldă" ratio="3 / 4" radius={26} />
+          <MediaSlot src={CFG.media + "hero.mp4"} kind="video" label="media/hero.mp4 — video îngrijitoare cu un vârstnic, lumină caldă" ratio="3 / 4" radius={26} />
           <div className="hero-media-badge">
             <Icon name="heart" size={18} fill={true} stroke={0} />
             <span>{T.about.badge2}</span>
