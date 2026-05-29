@@ -20,8 +20,10 @@ export default function Reveal({ children, delay = 0, as = "div", className = ""
   const Tag = as;
   return (
     <Tag ref={ref} className={className}
-      style={{ ...style, opacity: shown ? 1 : 0, transform: shown ? "none" : "translateY(22px)",
-        transition: `opacity 1s cubic-bezier(.2,.7,.2,1) ${delay}ms, transform 1s cubic-bezier(.2,.7,.2,1) ${delay}ms` }}>
+      style={{
+        ...style, opacity: shown ? 1 : 0, transform: shown ? "none" : "translateY(22px)",
+        transition: `opacity 1.5s cubic-bezier(.2,.7,.2,1) ${delay}ms, transform 1s cubic-bezier(.2,.7,.2,1) ${delay}ms`
+      }}>
       {children}
     </Tag>
   );
