@@ -2,6 +2,7 @@
 const ICONS = {
   phone: "M2.5 4.5C2.5 3.4 3.4 2.5 4.5 2.5h2.2c.5 0 .9.3 1 .8l.9 3c.1.4 0 .8-.3 1.1L7 10.6a12 12 0 0 0 5.4 5.4l1.2-1.3c.3-.3.7-.4 1.1-.3l3 .9c.5.1.8.5.8 1v2.2c0 1.1-.9 2-2 2C9.6 20.5 2.5 13.4 2.5 4.5Z",
   whatsapp: "M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5Zm0 2a7.5 7.5 0 0 1 0 15 7.4 7.4 0 0 1-3.8-1l-.3-.2-2.4.6.6-2.3-.2-.4A7.5 7.5 0 0 1 12 4.5Zm-2.7 3.4c-.2 0-.5 0-.7.3-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.8 2.7.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.4-1.5-.7c-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.2-.4 0-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4Z",
+  facebook: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
   check: "M4 10.5l4 4 8-9",
   shield: "M10 2.5l6 2.2v5.3c0 3.7-2.5 6.6-6 7.5-3.5-.9-6-3.8-6-7.5V4.7L10 2.5Z",
   home: "M3 9.5L10 3.5l7 6M5 8.5v8h10v-8",
@@ -21,10 +22,11 @@ const ICONS = {
 
 export default function Icon({ name, size = 20, fill = false, stroke = 2, style = {}, ...rest }) {
   const d = ICONS[name] || "";
+  const viewBox = (name === "whatsapp" || name === "facebook") ? "0 0 24 24" : "0 0 20 20";
   return (
-    <svg width={size} height={size} viewBox="0 0 20 20" fill={fill ? "currentColor" : "none"}
+    <svg width={size} height={size} viewBox={viewBox} fill={fill ? "currentColor" : "none"}
          stroke={fill ? "none" : "currentColor"} strokeWidth={stroke} strokeLinecap="round"
-         strokeLinejoin="round" style={style} aria-hidden="true" {...rest}>
+         strokeLinejoin="round" style={{ flexShrink: 0, ...style }} aria-hidden="true" {...rest}>
       <path d={d} />
     </svg>
   );

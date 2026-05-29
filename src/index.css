@@ -18,6 +18,7 @@
   --accent-shadow:rgba(189,79,44,.30);
   --gold:#d99f3f;
   --wa:#25956b;
+  --fb:#1877f2;
 
   --ph-bg:#efe4d7;
   --ph-stripe:#e4d5c3;
@@ -61,6 +62,8 @@ a{color:inherit;}
 .btn-primary:hover{background:var(--accent-dark); box-shadow:0 12px 26px var(--accent-shadow);}
 .btn-whatsapp{background:var(--wa); color:#fff; box-shadow:0 8px 20px rgba(37,149,107,.28);}
 .btn-whatsapp:hover{filter:brightness(.95);}
+.btn-facebook{background:var(--fb); color:#fff; box-shadow:0 8px 20px rgba(24,119,242,.28);}
+.btn-facebook:hover{filter:brightness(.95);}
 .btn-ghost{background:transparent; color:var(--ink); border-color:var(--hairline);}
 .btn-ghost:hover{background:var(--surface-2); border-color:var(--ink-soft);}
 

@@ -66,7 +66,8 @@ export default function Contact({ T, CFG }) {
             <div className="contact-cta-row">
               <a href={CFG.wa} target="_blank" rel="noopener" className="btn btn-whatsapp" style={{ flex: 1, justifyContent: "center" }}>
                 <Icon name="whatsapp" size={18} fill={true} stroke={0} />WhatsApp</a>
-              <a href={CFG.fb} target="_blank" rel="noopener" className="btn btn-ghost" style={{ flex: 1, justifyContent: "center" }}>Facebook</a>
+              <a href={CFG.fb} target="_blank" rel="noopener" className="btn btn-facebook" style={{ flex: 1, justifyContent: "center" }}>
+                <Icon name="facebook" size={18} />Facebook</a>
             </div>
           </div>
           <div className="contact-map">
