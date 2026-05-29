@@ -26,4 +26,4 @@ export default function About({ T, CFG }) {
       </div>
     </section>
   );
-}
+} 
